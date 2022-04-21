@@ -275,4 +275,8 @@ class NoteController extends Controller
     //     dd($item);
     //  return response()->json(["status" => 200, "message" => $request->id]);
     }
+
+    public function sortItem(){
+        
+    }
 }

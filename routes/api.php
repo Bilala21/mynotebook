@@ -52,4 +52,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get("/single-note/{id}",[NoteController::class,'singleNote']);
     Route::get("/update-item-status/{id}",[NoteController::class,'updateItemStatus']);
      Route::post("/arrange-items",[NoteController::class,'arrangeItem']);
+     Route::post("/sort-items", [NoteController::class,"sortItem"]);
 });
